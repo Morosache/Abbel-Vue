@@ -13,7 +13,7 @@ import show9 from '/images/carousell2.webp'
 import show10 from '/images/carousell3.webp'
 
 
-const photos = [show8, show2, show3, show5, show10, show6, show9, show1, show7, show4]
+const photos = [show5, show2, show3, show1, show10, show6, show9, show4, show7, show8]
 
 
 </script>
@@ -21,10 +21,10 @@ const photos = [show8, show2, show3, show5, show10, show6, show9, show1, show7, 
 <template>
     <div class="p-[30px] mt-[30px] mb-[20px]">
         <div class="flex flex-row items-center gap-1 border-l-2">
-            <Images class="ml-[4px] w-[19px] h-[20px]" />
-            <p class="text-[15px] font-light">My most</p>
-            <p class="text-[15px] font-medium">RECENT</p>
-            <p class="text-[15px] text-[#F9C74F]">PHOTOS</p>
+            <Images class="ml-[4px] w-[19px] h-[20px] md:w-[29px] md: h-[30px]" />
+            <p class="recent-photos-title text-[15px] font-light">My most</p>
+            <p class="recent-photos-title text-[15px] font-medium">RECENT</p>
+            <p class="recent-photos-title text-[15px] font-medium text-[#F9C74F]">PHOTOS</p>
         </div>
 
         <div class="masonry mt-[30px]">
@@ -34,10 +34,10 @@ const photos = [show8, show2, show3, show5, show10, show6, show9, show1, show7, 
         </div>
 
         <div class="mt-[20px] flex items-center flex-row gap-1">
-            <p class="text-[15px] font-medium">See all my</p>
+            <p class="text-[15px] font-medium md:text-[20px]">See all my</p>
             <router-link to="/mobile-menu" class="flex flex-row items-center">
-                <p class="text-[15px] font-medium text-[#F9C74F]"> PHOTOS</p>
-                <MoveUpRight class="w-[15px] h-[15px] font-medium ml-[2px]" />
+                <p class="text-[15px] font-medium text-[#F9C74F] md:text-[20px]"> PHOTOS</p>
+                <MoveUpRight class="w-[15px] h-[15px] font-medium ml-[2px] md:w-[20px] md:h-[20px]" />
             </router-link>
         </div>
 
@@ -50,16 +50,14 @@ const photos = [show8, show2, show3, show5, show10, show6, show9, show1, show7, 
     column-gap: 16px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
     .masonry {
         column-count: 2;
     }
-}
 
-@media (min-width: 768px) {
-    .masonry {
-        column-count: 3;
-    }
+    .recent-photos-title{
+        font-size: 20px;;
+    } 
 }
 
 @media (min-width: 1024px) {

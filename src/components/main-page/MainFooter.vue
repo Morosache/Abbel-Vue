@@ -12,7 +12,8 @@ import { Mail } from 'lucide-vue-next'
                 </div>
                 <div class="flex justify-center flex-col items-left">
                     <router-link to="/" class="text-[20px] text-[#666666]">Portofolio</router-link>
-                    <router-link to="/" class="text-[20px] text-[#666666]">About Me</router-link>
+                    <router-link to="/" class="text-[20px] text-[#666666]">Most Recent</router-link>
+                    <router-link to="/" class="text-[20px] text-[#666666]">About</router-link>
                     <router-link to="/" class="text-[20px] text-[#666666]">Reviews</router-link>
                 </div>
             </div>

@@ -21,7 +21,7 @@ const currentIndex = ref(0);
 let interval;
 onMounted(() => {
      interval = setInterval(() => {
-        currentIndex.value = (currentIndex.value + 1) % carouselphotos.length}, 4000)
+        currentIndex.value = (currentIndex.value + 1) % carouselphotos.length}, 5000)
     })
 
 onUnmounted(() => clearInterval(interval));
@@ -30,28 +30,43 @@ const showMenu = ref(false);
 </script>
 
 <template>
-    <div class="h-[70vh]">
+    <div class="h-[70vh] relative overflow-hidden">
         <!--Menu bar-->
-        <div class="fixed z-50 w-screen h-[65px] bg-slate-600/20 flex flex-row justify-between items-center backdrop-blur-sm">
-            <img src="/images/logo.png" alt="logo" class="w-[70px] h-[60px] opacity-[100%] mx-[30px]"></img>
-           <router-link to="/mobile-menu"><Menu class="mr-[30px] text-[#ffffff]" /></router-link>
+        <div class="fixed z-50 w-screen h-[65px] bg-slate-600/20 flex flex-row justify-between items-center backdrop-blur-sm md:h-[85px]" id="top-bar">
+            <img src="/images/logo.png" alt="logo" class="w-[70px] h-[60px] opacity-[100%] mx-[30px] md:w-[90px] md:h-[80px]" id="logo"></img>
+           <router-link to="/mobile-menu"><Menu class="mr-[30px] text-[#ffffff] md:h-[30px] md:w-[30px]" id="menu-button" /></router-link>
         </div>
-         <transition name="fade" mode="out-in">
-        <img :src="carouselphotos[currentIndex]" alt="carousel image" loading ="lazy" class="w-full h-full  object-cover transition-opacity duration-700"></img>
+        
+         <transition name="slide-in">
+        <img :key="currentIndex" :src="carouselphotos[currentIndex]" alt="carousel image" loading ="lazy" class="w-full h-full  object-cover transition-opacity duration-700 md:object-cover" id="carousel-image"></img>
         </transition>
     </div>
         
 </template>
 
 <style scoped>
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 1s ease-in-out;
+.slide-in-enter-active,
+.slide-in-leave-active {
+  transition: all 1s ease-in-out;
+  position: absolute;
 }
-.fade-enter-from, .fade-leave-to {
+
+.slide-in-enter-from {
+  transform: translateX(-100%);
   opacity: 0;
 }
-.fade-enter-to, .fade-leave-from {
+
+.slide-in-enter-to {
+  transform: translateX(0);
   opacity: 1;
 }
 
+.slide-in-leave-from {
+  transform: translateX(0);
+  opacity: 1;
+}
+.slide-in-leave-to {
+  transform: translateX(100%);
+  opacity: 0;
+}
 </style>
