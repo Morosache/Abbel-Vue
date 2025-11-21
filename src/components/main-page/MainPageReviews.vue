@@ -7,12 +7,12 @@ import { ChevronRight } from 'lucide-vue-next'
 
 const reviews = [
     { id: 1, reviewName: 'Elisei Morosan', reviewTitle: 'Foarte bun', reviewDescription: 'Cel mai bun fotograf de pe zona Sucevei si de pe zona Bruxelles! Recomand cu incredere!' },
-    { id: 2, reviewName: 'Larisa Morosan', reviewTitle: 'Super smecher', reviewDescription: 'Cel mai bun fotograf de pe zona Sucevei si de pe zona Bruxelles! Recomand cu incredere!' },
-    { id: 3, reviewName: 'Miriam Gurita', reviewTitle: 'Cel mai tare', reviewDescription: 'Cel mai bun fotograf de pe zona Sucevei si de pe zona Bruxelles! Recomand cu incredere!' },
-    { id: 4, reviewName: 'Isaac Gurita', reviewTitle: 'Cel mai bun', reviewDescription: 'Cel mai bun fotograf de pe zona Sucevei si de pe zona Bruxelles! Recomand cu incredere!' },
-    { id: 5, reviewName: 'Cornelia Morosan', reviewTitle: 'Cel mai bun', reviewDescription: 'Cel mai bun fotograf de pe zona Sucevei si de pe zona Bruxelles! Recomand cu incredere!' },
-    { id: 6, reviewName: 'Costica Morosan', reviewTitle: 'Cel mai bun', reviewDescription: 'Cel mai bun fotograf de pe zona Sucevei si de pe zona Bruxelles! Recomand cu incredere!' },
-    { id: 7, reviewName: 'Abbel Gurita', reviewTitle: 'Cel mai bun', reviewDescription: 'Cel mai bun fotograf de pe zona Sucevei si de pe zona Bruxelles! Recomand cu incredere!' },
+    { id: 2, reviewName: 'Larisa Morosan', reviewTitle: 'Super smecher', reviewDescription: 'In molestie ullamcorper tortor non rutrum. Suspendisse blandit leo ac orci lobortis, non dapibus eros pellentesque.' },
+    { id: 3, reviewName: 'Miriam Gurita', reviewTitle: 'Cel mai tare', reviewDescription: 'ulla in diam sed quam dapibus ornare. Integer dui eros, fringilla sed dolor nec, tempus suscipit lacus.' },
+    { id: 4, reviewName: 'Isaac Gurita', reviewTitle: 'Cel mai bun', reviewDescription: 'urabitur hendrerit mauris nibh, in malesuada nibh tincidunt eu. Morbi a rhoncus ex.' },
+    { id: 5, reviewName: 'Cornelia Morosan', reviewTitle: 'Cel mai bun', reviewDescription: 'Vivamus congue cursus est, vitae laoreet elit ornare vitae. Phasellus ac auctor nisi. Duis sodales in nisi in congue. Aliquam eu elit id elit cursus sollicitudin. ' },
+    { id: 6, reviewName: 'Costica Morosan', reviewTitle: 'Cel mai bun', reviewDescription: 'Cras nec justo bibendum, efficitur lacus ac, faucibus ligula. Sed varius sed sapien sed laoreet. Nulla et massa et risus pulvinar sodales.' },
+    { id: 7, reviewName: 'Abbel Gurita', reviewTitle: 'Cel mai bun', reviewDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum egestas augue eu molestie.' },
 
 ]
 
