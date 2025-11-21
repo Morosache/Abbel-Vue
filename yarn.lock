@@ -338,6 +338,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emailjs/browser@npm:^4.4.1":
+  version: 4.4.1
+  resolution: "@emailjs/browser@npm:4.4.1"
+  checksum: 10c0/91c3d1702818dc2db61f382f5295e469ce2e6acb4d683d65239e0a12dea8b635cd8cea60ef9a83f2aa8fce857b1f8f8663e02dcd7f529cbf902f1f0e6d0d1b44
+  languageName: node
+  linkType: hard
+
 "@emnapi/core@npm:^1.5.0, @emnapi/core@npm:^1.6.0":
   version: 1.7.1
   resolution: "@emnapi/core@npm:1.7.1"
@@ -1219,6 +1226,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "abbel-vue@workspace:."
   dependencies:
+    "@emailjs/browser": "npm:^4.4.1"
     "@tailwindcss/vite": "npm:^4.1.17"
     "@vitejs/plugin-vue": "npm:^6.0.1"
     bootstrap: "npm:5.3.8"

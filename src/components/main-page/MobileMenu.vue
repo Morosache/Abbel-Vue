@@ -6,7 +6,7 @@ import { X } from 'lucide-vue-next'
     <!--Menu POP-->
     <div class="fixed inset-0 bg-[#f5f5f5] flex flex-col px-[30px] py-[20px]">
         <div>
-        <router-link to="/"> <X  class="justify-self-end"/></router-link>
+        <router-link to="/"> <X  class="justify-self-end md:w-[40px] md:h-[40px]"/></router-link>
         </div>
         <div class="flex flex-col mx-[30px]">
             <ol>
@@ -31,7 +31,10 @@ li {
     font-weight: 400;
 }
 
-li :hover {
-    font-size:25px;
+@media (min-width: 768px) {
+    li {
+        font-size:28px;
+    }
+
 }
 </style>

@@ -28,6 +28,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@emailjs/browser", "npm:4.4.1"],\
           ["@tailwindcss/vite", "virtual:06ecd417c5451ee06d0facd4fa8a933db4e68652c358b78904fc7c46940951812b605a4203b164f53c57a46aec6d80e0d25eeca31216af5814798b4cf3f32a1b#npm:4.1.17"],\
           ["@vitejs/plugin-vue", "virtual:06ecd417c5451ee06d0facd4fa8a933db4e68652c358b78904fc7c46940951812b605a4203b164f53c57a46aec6d80e0d25eeca31216af5814798b4cf3f32a1b#npm:6.0.1"],\
           ["abbel-vue", "workspace:."],\
@@ -516,6 +517,15 @@ const RAW_RUNTIME_STATE =
           ["@babel/helper-string-parser", "npm:7.27.1"],\
           ["@babel/helper-validator-identifier", "npm:7.28.5"],\
           ["@babel/types", "npm:7.28.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@emailjs/browser", [\
+      ["npm:4.4.1", {\
+        "packageLocation": "../home/node/.yarn/berry/cache/@emailjs-browser-npm-4.4.1-64a2cb04f8-10c0.zip/node_modules/@emailjs/browser/",\
+        "packageDependencies": [\
+          ["@emailjs/browser", "npm:4.4.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1618,6 +1628,7 @@ const RAW_RUNTIME_STATE =
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@emailjs/browser", "npm:4.4.1"],\
           ["@tailwindcss/vite", "virtual:06ecd417c5451ee06d0facd4fa8a933db4e68652c358b78904fc7c46940951812b605a4203b164f53c57a46aec6d80e0d25eeca31216af5814798b4cf3f32a1b#npm:4.1.17"],\
           ["@vitejs/plugin-vue", "virtual:06ecd417c5451ee06d0facd4fa8a933db4e68652c358b78904fc7c46940951812b605a4203b164f53c57a46aec6d80e0d25eeca31216af5814798b4cf3f32a1b#npm:6.0.1"],\
           ["abbel-vue", "workspace:."],\

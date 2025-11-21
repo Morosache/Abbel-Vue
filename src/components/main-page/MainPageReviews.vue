@@ -22,7 +22,7 @@ onMounted(() => {
 })
 
 const cardsToShow = computed(() => {
-    return width.value >= 782 ? 2 : 1
+    return width.value >= 768 ? 2 : 1
 })
 
 const visibleReviews = computed(() => {
