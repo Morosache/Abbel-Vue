@@ -11,6 +11,6 @@ import MainFooter from '@/components/main-page/MainFooter.vue';
 <WhoAmI />
 <MostRecentPhotos />
 <MainPageReviews />
-<MainFooter />
+<MainFooter firstLink="About" secondLink="Most Recent" thirdLink="Portofolio" fourthLink="Reviews"/>
 
 </template>

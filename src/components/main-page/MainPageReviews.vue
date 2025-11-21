@@ -10,6 +10,10 @@ const reviews = [
     { id: 2, reviewName: 'Larisa Morosan', reviewTitle: 'Super smecher', reviewDescription: 'Cel mai bun fotograf de pe zona Sucevei si de pe zona Bruxelles! Recomand cu incredere!' },
     { id: 3, reviewName: 'Miriam Gurita', reviewTitle: 'Cel mai tare', reviewDescription: 'Cel mai bun fotograf de pe zona Sucevei si de pe zona Bruxelles! Recomand cu incredere!' },
     { id: 4, reviewName: 'Isaac Gurita', reviewTitle: 'Cel mai bun', reviewDescription: 'Cel mai bun fotograf de pe zona Sucevei si de pe zona Bruxelles! Recomand cu incredere!' },
+    { id: 5, reviewName: 'Cornelia Morosan', reviewTitle: 'Cel mai bun', reviewDescription: 'Cel mai bun fotograf de pe zona Sucevei si de pe zona Bruxelles! Recomand cu incredere!' },
+    { id: 6, reviewName: 'Costica Morosan', reviewTitle: 'Cel mai bun', reviewDescription: 'Cel mai bun fotograf de pe zona Sucevei si de pe zona Bruxelles! Recomand cu incredere!' },
+    { id: 7, reviewName: 'Abbel Gurita', reviewTitle: 'Cel mai bun', reviewDescription: 'Cel mai bun fotograf de pe zona Sucevei si de pe zona Bruxelles! Recomand cu incredere!' },
+
 ]
 
 const currentIndex = ref(0);
@@ -22,7 +26,9 @@ onMounted(() => {
 })
 
 const cardsToShow = computed(() => {
-    return width.value >= 768 ? 2 : 1
+    if(width.value >= 1024) return 3
+    if(width.value >= 768) return 2
+    return 1
 })
 
 const visibleReviews = computed(() => {
@@ -47,7 +53,7 @@ function prevReview() {
 </script>
 
 <template>
-    <div class= "bg-[#f5f5f5] p-[50px]">
+    <div class= "bg-[#f5f5f5] px-[30px] py-[50px]">
         <div class="flex flex-row items-center gap-1 border-l-2">
             <UserStar class="ml-[4px] w-[19px] h-[20px] md:h-[29px] md:w-[29px]" />
             <p class="text-[15px] md:text-[20px]">Client</p>

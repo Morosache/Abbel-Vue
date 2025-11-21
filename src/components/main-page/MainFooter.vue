@@ -1,5 +1,12 @@
 <script setup>
 import SendEmail from './SendEmail.vue';
+
+defineProps({
+    firstLink: String,
+    secondLink: String,
+    thirdLink: String,
+    fourthLink: String
+})
 </script>
 
 <template>
@@ -12,10 +19,10 @@ import SendEmail from './SendEmail.vue';
                         <h1 class="footer-title text-[32px] text-[#f1f1f1] ml-[3px] ">See More</h1>
                     </div>
                     <div class="flex justify-center flex-col items-left">
-                        <router-link to="/" class="footer-link">Portofolio</router-link>
-                        <router-link to="/" class="footer-link">Most Recent</router-link>
-                        <router-link to="/" class="footer-link">About</router-link>
-                        <router-link to="/" class="footer-link">Reviews</router-link>
+                        <router-link to="/" class="footer-link">{{ firstLink }}</router-link>
+                        <router-link to="/" class="footer-link">{{ secondLink }}</router-link>
+                        <router-link to="/" class="footer-link">{{ thirdLink }}</router-link>
+                        <router-link to="/" class="footer-link">{{ fourthLink }}</router-link>
                     </div>
                 </div>
                 <!-- Social Media -->

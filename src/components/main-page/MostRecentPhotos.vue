@@ -8,8 +8,8 @@ import show4 from '/images/show4.webp'
 import show5 from '/images/show5.webp'
 import show6 from '/images/show6.webp'
 import show7 from '/images/show7.webp'
-import show8 from '/images/carousell1.webp'
-import show9 from '/images/carousell2.webp'
+import show8 from '/images/carousell2.webp'
+import show9 from '/images/show8.jpg'
 import show10 from '/images/carousell3.webp'
 
 
@@ -62,7 +62,7 @@ const photos = [show5, show2, show3, show1, show10, show6, show9, show4, show7, 
 
 @media (min-width: 1024px) {
     .masonry {
-        column-count: 4;
+        column-count: 3;
     }
 }
 

@@ -33,15 +33,15 @@ export default {
     <form ref='form' @submit.prevent="sendEmail">
         <div class="w-full flex flex-col gap-1">
             <input type="text" placeholder="First Name" name="user_first_name" required
-                class="footer-input border-1 w-full border-[#f1f1f1] placeholder-gray-400">
+                class="footer-input border-1 w-full border-[#f1f1f1] placeholder-gray-500">
             <input type="text" placeholder="Last Name" name="user_last_name"
-                class=" footer-input border-1 w-full border-[#f1f1f1] placeholder-gray-400">
+                class=" footer-input border-1 w-full border-[#f1f1f1] placeholder-gray-500">
             <input type="email" placeholder="Your email" name="user_email" required
-                class=" footer-input border-1 w-full border-[#f1f1f1] placeholder-gray-400">
+                class=" footer-input border-1 w-full border-[#f1f1f1] placeholder-gray-500">
             <input type="text" placeholder="Subject" name="subject"
-                class=" footer-input border-1 w-full border-[#f1f1f1] placeholder-gray-400">
+                class=" footer-input border-1 w-full border-[#f1f1f1] placeholder-gray-500">
             <textarea placeholder="Message" id="message" name="message" required
-                class="border-1 border-[#f1f1f1] w-full h-[100px] text-gray-400"></textarea>
+                class="border-1 border-[#f1f1f1] w-full h-[100px] text-[#f5f5f5]"></textarea>
         </div>
         <div class="flex w-full mt-[3px]">
             <input type="submit" value="Send Email"

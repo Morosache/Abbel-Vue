@@ -53,7 +53,7 @@ function checkWidth() {
 </script>
 
 <template>
-  <div class="h-[70vh] w-full relative overflow-hidden">
+  <div class="h-[70vh] w-full relative overflow-hidden lg:h-[75vh]">
     <!--Menu bar-->
     <div
       class="fixed z-50 w-full h-[65px] bg-slate-600/20 flex flex-row items-center justify-between backdrop-blur-sm md:h-[85px]"
@@ -69,7 +69,7 @@ function checkWidth() {
 
     <transition name="slide-in">
       <img :key="currentIndex" :src="carouselphotos[currentIndex]" alt="carousel image" loading="lazy"
-        class="w-full h-full object-cover transition-opacity duration-700 " id="carousel-image"></img>
+        class="w-full h-full object-cover object-center transition-opacity duration-700 " id="carousel-image"></img>
     </transition>
   </div>
 
