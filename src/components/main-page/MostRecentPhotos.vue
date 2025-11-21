@@ -19,7 +19,7 @@ const photos = [show5, show2, show3, show1, show10, show6, show9, show4, show7, 
 </script>
 
 <template>
-    <div class="p-[30px] mt-[30px] mb-[20px]">
+    <div class="p-[30px] mt-[30px] mb-[20px] overflow-hidden">
         <div class="flex flex-row items-center gap-1 border-l-2">
             <Images class="ml-[4px] w-[19px] h-[20px] md:w-[29px] md: h-[30px]" />
             <p class="recent-photos-title text-[15px] font-light">My most</p>

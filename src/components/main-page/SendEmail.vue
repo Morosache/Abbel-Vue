@@ -15,6 +15,8 @@ export default {
                 .then(
                     () => {
                         console.log('succes');
+                        this.$refs.form.reset();
+                        alert("email sent");
                     },
                     (error) => {
                         console.log('failed... ', error.text)

@@ -47,7 +47,7 @@ function prevReview() {
 </script>
 
 <template>
-    <div class=" pt-[50px] bg-[#f5f5f5] p-[30px]">
+    <div class= "bg-[#f5f5f5] p-[50px]">
         <div class="flex flex-row items-center gap-1 border-l-2">
             <UserStar class="ml-[4px] w-[19px] h-[20px] md:h-[29px] md:w-[29px]" />
             <p class="text-[15px] md:text-[20px]">Client</p>
@@ -55,17 +55,25 @@ function prevReview() {
         </div>
         <div class="flex flex-row justify-center items-center">
             <button @click=prevReview>
-                <ChevronLeft class="md:w-[30px] md:h-[30px]" />
+                <ChevronLeft class="change-button md:w-[30px] md:h-[30px] hover:text-[#F9C74F]" />
             </button>
             <div class="flex justify-center items-center pb-[20px] gap-2">
                 <ReviewCard v-for="review in visibleReviews" :key="review.id" :reviewName="review.reviewName"
                     :reviewTitle="review.reviewTitle" :reviewDescription="review.reviewDescription" />
             </div>
             <button @click=nextReview>
-                <ChevronRight class="md:w-[30px] md:h-[30px]" />
+                <ChevronRight class="change-button md:w-[30px] md:h-[30px]" />
             </button>
 
         </div>
     </div>
 
 </template>
+
+<style scoped>
+.change-button:hover {
+    color: #F9C74F;
+    transition: all 0.2s ease;
+
+}
+</style>
