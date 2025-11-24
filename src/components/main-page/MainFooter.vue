@@ -56,10 +56,11 @@ defineProps({
                 </div>
             </div>
         </div>
-    </div>
-    <div class="text-[8px] text-[#f5f5f5] mt-[60px] justify-sefl-end">
+        <div class="text-[8px] text-[#f5f5f5] mt-[30px]">
         <p>Developed by Morosan Elisei, 2025</p>
     </div>
+    </div>
+    
 </template>
 
 <style scoped>

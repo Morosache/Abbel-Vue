@@ -12,7 +12,7 @@ import Contact from '@/components/main-page/Contact.vue';
 <WhoAmI />
 <MostRecentPhotos />
 <MainPageReviews />
-<Contact />
+<Contact id="contact" />
 <MainFooter firstLink="About" secondLink="Most Recent" thirdLink="Portofolio" fourthLink="Reviews"/>
 
 </template>
