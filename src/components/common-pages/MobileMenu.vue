@@ -11,10 +11,10 @@ import { X } from 'lucide-vue-next'
         <div class="flex flex-col mx-[30px]">
             <ol>
                 <router-link to="/"><li>Home</li></router-link>
-                <router-link to="/"><li>About</li></router-link>
+                <router-link to="/about-page"><li>About</li></router-link>
                 <router-link to="/"><li>Most recent</li></router-link>
                 <router-link to="/"><li>Reviews</li></router-link>
-                <router-link to="/"><li>Contacts</li></router-link>
+                <router-link to="/"><li>Contact</li></router-link>
             </ol>
         </div>
     </div>

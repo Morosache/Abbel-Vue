@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { UserStar } from 'lucide-vue-next'
-import ReviewCard from './ReviewCard.vue';
+import ReviewCard from '../common-pages/ReviewCard.vue';
 import { ChevronLeft } from 'lucide-vue-next'
 import { ChevronRight } from 'lucide-vue-next'
 

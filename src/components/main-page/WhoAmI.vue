@@ -31,7 +31,7 @@ import { MoveUpRight } from 'lucide-vue-next'
 
             <div class="mt-[20px] flex items-center flex-row gap-1 md:gap-1.5">
                 <p class="text-[15px] font-medium md:text-[20px]">More</p>
-                <router-link to="/mobile-menu" class="flex flex-row items-center">
+                <router-link to="/about-page" class="flex flex-row items-center">
                     <p class="text-[15px] font-medium text-[#F9C74F] md:text-[20px]"> ABOUT ME</p>
                     <MoveUpRight class="w-[15px] h-[15px] font-medium ml-[2px] md:w-[20px] md:h-[20px]" />
                 </router-link>

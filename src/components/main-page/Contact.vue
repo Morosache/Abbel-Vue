@@ -1,5 +1,5 @@
 <script setup>
-import SendEmail from './SendEmail.vue';
+import SendEmail from '../common-pages/SendEmail.vue';
 import { Mail } from 'lucide-vue-next'
 </script>
 
