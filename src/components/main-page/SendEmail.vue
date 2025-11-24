@@ -33,15 +33,15 @@ export default {
     <form ref='form' @submit.prevent="sendEmail">
         <div class="w-full flex flex-col gap-1">
             <input type="text" placeholder="First Name" name="user_first_name" required
-                class="footer-input border-1 w-full border-[#f1f1f1] placeholder-gray-500">
+                class="footer-input border-1 w-full border-[#222222] rounded-[5px] placeholder-gray-500">
             <input type="text" placeholder="Last Name" name="user_last_name"
-                class=" footer-input border-1 w-full border-[#f1f1f1] placeholder-gray-500">
+                class=" footer-input border-1 w-full border-[#222222] rounded-[5px] placeholder-gray-500">
             <input type="email" placeholder="Your email" name="user_email" required
-                class=" footer-input border-1 w-full border-[#f1f1f1] placeholder-gray-500">
+                class=" footer-input border-1 w-full border-[#222222] rounded-[5px] placeholder-gray-500">
             <input type="text" placeholder="Subject" name="subject"
-                class=" footer-input border-1 w-full border-[#f1f1f1] placeholder-gray-500">
+                class=" footer-input border-1 w-full border-[#222222] rounded-[5px] placeholder-gray-500">
             <textarea placeholder="Message" id="message" name="message" required
-                class="border-1 border-[#f1f1f1] w-full h-[100px] text-[#f5f5f5]"></textarea>
+                class="border-1 border-[#222222] pl-[3px] text-[13px] rounded-[5px] w-full h-[100px]"></textarea>
         </div>
         <div class="flex w-full mt-[3px]">
             <input type="submit" value="Send Email"
@@ -52,6 +52,13 @@ export default {
 
 <style scoped>
     .footer-input {
-        color: #f5f5f5;
+        color: #222222;
+        font-size: 13px;
+        padding-left: 3px;
+    }
+
+    input::placeholder {
+        font-size: 13px;
+        padding-left: 3px;
     }
 </style>

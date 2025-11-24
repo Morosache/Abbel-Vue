@@ -1,6 +1,4 @@
 <script setup>
-import SendEmail from './SendEmail.vue';
-
 defineProps({
     firstLink: String,
     secondLink: String,
@@ -11,7 +9,7 @@ defineProps({
 
 <template>
     <!-- See More -->
-    <div class="bg-[#222222] pt-[60px] pb-[15px] flex flex-col justify-center items-center">
+    <div class="bg-[#222222] pt-[60px] pb-[30px] flex flex-col justify-center items-center">
         <div class="flex flex-col lg:flex-row lg: items-center lg:gap-10">
             <div>
                 <div>
@@ -47,17 +45,6 @@ defineProps({
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Contact Me Form -->
-            <div>
-                <div class="mt-[50px]">
-                    <div class="flex jusitfy-center items-center mb-[6px] border-l-3 text-[#f1f1f1]">
-                        <h1 class="footer-title text-[32px] text-[#f1f1f1] ml-[3px] ">Send me an email</h1>
-                    </div>
-                    <div class="mt-[20px]">
-                        <SendEmail />
-                    </div>
-                </div>
 
                 <!-- Map -->
 
@@ -69,9 +56,9 @@ defineProps({
                 </div>
             </div>
         </div>
-         <div class="text-[8px] text-[#f5f5f5] mt-[60px] justify-sefl-end">
-                <p>Developed by Morosan Elisei, 2025</p>
-            </div>
+    </div>
+    <div class="text-[8px] text-[#f5f5f5] mt-[60px] justify-sefl-end">
+        <p>Developed by Morosan Elisei, 2025</p>
     </div>
 </template>
 

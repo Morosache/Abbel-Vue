@@ -12,7 +12,7 @@ const reviews = [
     { id: 4, reviewName: 'Isaac Gurita', reviewTitle: 'Cel mai bun', reviewDescription: 'urabitur hendrerit mauris nibh, in malesuada nibh tincidunt eu. Morbi a rhoncus ex.' },
     { id: 5, reviewName: 'Cornelia Morosan', reviewTitle: 'Cel mai bun', reviewDescription: 'Vivamus congue cursus est, vitae laoreet elit ornare vitae. Phasellus ac auctor nisi. Duis sodales in nisi in congue. Aliquam eu elit id elit cursus sollicitudin. ' },
     { id: 6, reviewName: 'Costica Morosan', reviewTitle: 'Cel mai bun', reviewDescription: 'Cras nec justo bibendum, efficitur lacus ac, faucibus ligula. Sed varius sed sapien sed laoreet. Nulla et massa et risus pulvinar sodales.' },
-    { id: 7, reviewName: 'Abbel Gurita', reviewTitle: 'Cel mai bun', reviewDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum egestas augue eu molestie.' },
+    { id: 7, reviewName: 'Abbel Gurita', reviewTitle: 'Cel mai bun', reviewDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum egestas augue eu molestie. ' },
 
 ]
 
@@ -53,7 +53,7 @@ function prevReview() {
 </script>
 
 <template>
-    <div class= "bg-[#f5f5f5] px-[30px] py-[50px]">
+    <div class= "bg-[#f5f5f5] px-[30px] py-[50px] md:px-[50px] lg:px-[70px]">
         <div class="flex flex-row items-center gap-1 border-l-2">
             <UserStar class="ml-[4px] w-[19px] h-[20px] md:h-[29px] md:w-[29px]" />
             <p class="text-[15px] md:text-[20px]">Client</p>

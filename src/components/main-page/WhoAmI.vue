@@ -4,7 +4,7 @@ import { MoveUpRight } from 'lucide-vue-next'
 </script>
 
 <template>
-    <div class="who-am-i-section px-[40px] pt-[100px] pb-[30px] bg-[#F5F5F5] md:pb-[50px] lg:flex lg:justify-center lg:items-center lg:gap-10 lg:px-[80px]">
+    <div class="who-am-i-section px-[30px] pt-[100px] pb-[30px] bg-[#F5F5F5] md:pb-[50px] lg:flex lg:justify-center lg:items-center lg:gap-10 md:px-[50px] lg:px-[80px]">
         <div class="flex justify-center ">
             <img src="/images/pozaabbel.webp" loading="lazy" class="rounded-[5px] md:w-[500px] md:h-[650px] lg:w-[450px] lg:h-[600px]"></img>
         </div>

@@ -4,6 +4,7 @@ import WhoAmI from '@/components/main-page/WhoAmI.vue';
 import MostRecentPhotos from '@/components/main-page/MostRecentPhotos.vue';
 import MainPageReviews from '@/components/main-page/MainPageReviews.vue';
 import MainFooter from '@/components/main-page/MainFooter.vue';
+import Contact from '@/components/main-page/Contact.vue';
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import MainFooter from '@/components/main-page/MainFooter.vue';
 <WhoAmI />
 <MostRecentPhotos />
 <MainPageReviews />
+<Contact />
 <MainFooter firstLink="About" secondLink="Most Recent" thirdLink="Portofolio" fourthLink="Reviews"/>
 
 </template>
