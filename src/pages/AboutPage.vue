@@ -5,7 +5,17 @@ import MenuBar from '@/components/common-pages/MenuBar.vue';
 </script>
 
 <template>
-<MenuBar />
-<AboutMe />
-<MainFooter firstLink="Home" secondLink="Most Recent" thirdLink="Portofolio" fourthLink="Reviews"/>
+    <MenuBar :links="[
+        { to: '/', label: 'Home' },
+        { to: '/most-recent-page', label: 'Most Recent' },
+        { to: '/portfolio-page', label: 'Portfolio' },
+        { to: '/reviews-page', label: 'Reviews' },
+    ]" />
+    <AboutMe />
+    <MainFooter :routes="[
+        { to: '/', label: 'Home' },
+        { to: '/most-recent-page', label: 'Most Recent' },
+        { to: '/portfolio-page', label: 'Portfolio' },
+        { to: '/reviews-page', label: 'Reviews' },
+    ]" />
 </template>

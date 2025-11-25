@@ -4,11 +4,7 @@ import ResponsiveMenu from './ResponsiveMenu.vue';
 import { Menu } from 'lucide-vue-next';
 
 defineProps({
-    firstLink:String,
-    secondLink:String,
-    thirdLink:String,
-    fourthLink:String,
-
+    links: Array,
 })
 
 const isDesktop = ref(window.innerWidth >= 1024);
@@ -36,6 +32,6 @@ onUnmounted(() => {
         <router-link v-if="!isDesktop" to="/mobile-menu">
             <Menu class="mr-[30px] text-[#ffffff] md:h-[30px] md:w-[30px]" id="menu-button" />
         </router-link>
-        <ResponsiveMenu v-else firstLink="About" secondLink="Most Recent" thirdLink="Portofolio" fourthLink="Reviews" />
+        <ResponsiveMenu v-else :links="links" />
     </div>
 </template>

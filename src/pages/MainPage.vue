@@ -13,6 +13,11 @@ import Contact from '@/components/main-page/Contact.vue';
 <MostRecentPhotos />
 <MainPageReviews />
 <Contact id="contact" />
-<MainFooter firstLink="About" secondLink="Most Recent" thirdLink="Portofolio" fourthLink="Reviews"/>
+<MainFooter :routes="[
+        { to: '/about-page', label: 'About' },
+        { to: '/most-recent-page', label: 'Most Recent' },
+        { to: '/portfolio-page', label: 'Portfolio' },
+        { to: '/reviews-page', label: 'Reviews' },
+    ]" />
 
 </template>

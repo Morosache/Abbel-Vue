@@ -1,9 +1,6 @@
 <script setup>
 defineProps({
-    firstLink: String,
-    secondLink: String,
-    thirdLink: String,
-    fourthLink: String
+    routes: Array,
 })
 </script>
 
@@ -16,12 +13,11 @@ defineProps({
                     <div class="flex jusitfy-center items-center mb-[6px] border-l-3 text-[#f1f1f1]">
                         <h1 class="footer-title text-[32px] text-[#f1f1f1] ml-[3px] ">See More</h1>
                     </div>
-                    <div class="flex justify-center flex-col items-left">
-                        <router-link to="/about-page" class="footer-link">{{ firstLink }}</router-link>
-                        <router-link to="/" class="footer-link">{{ secondLink }}</router-link>
-                        <router-link to="/" class="footer-link">{{ thirdLink }}</router-link>
-                        <router-link to="/" class="footer-link">{{ fourthLink }}</router-link>
-                    </div>
+                    <ul class="flex justify-center flex-col items-left">
+                        <li v-for="(route, index) in routes" :key="index" class="footer-link">
+                            <router-link :to="route.to">{{ route.label }}</router-link>
+                        </li>
+                    </ul>
                 </div>
                 <!-- Social Media -->
                 <div class=" mt-[50px]">

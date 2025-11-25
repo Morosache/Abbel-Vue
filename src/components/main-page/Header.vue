@@ -41,7 +41,12 @@ onUnmounted(() => {
 <template>
   <div class="h-[70vh] w-full relative overflow-hidden lg:h-[75vh]">
     <!--Menu bar-->
-    <MenuBar firstLink="About" secondLink="Most Recent" thirdLink="Portofolio" fourthLink="Reviews"/>
+    <MenuBar :links="[
+      { to: '/about-page', label: 'About'},
+      { to: '/', label: 'Most Recent'},
+      { to: '/', label: 'Portfolio'},
+      { to: '/', label: 'Reviews'},
+    ]"/>
 
     <transition name="slide-in">
       <img :key="currentIndex" :src="carouselphotos[currentIndex]" alt="carousel image" loading="lazy"

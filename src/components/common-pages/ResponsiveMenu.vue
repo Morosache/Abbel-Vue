@@ -1,10 +1,6 @@
 <script setup>
 defineProps({
-    firstLink: String,
-    secondLink: String,
-    thirdLink: String,
-    fourthLink: String,
-
+    links: Array,
 });
 
   const scrollToContact = () => { 
@@ -22,27 +18,21 @@ defineProps({
 
 <template>
     <ol class=" flex flex-row  items-center gap-6 mr-[40px]">
-        <router-link to="/">
-            <li class="text-[#f5f5f5]">{{ firstLink }}</li>
-        </router-link>
-        <router-link to="/">
-            <li class="text-[#f5f5f5]">{{ secondLink }}</li>
-        </router-link>
-        <router-link to="/">
-            <li class="text-[#f5f5f5]">{{ thirdLink }}</li>
-        </router-link>
-        <router-link to="/">
-            <li class="text-[#f5f5f5]">{{ fourthLink }}</li>
-        </router-link>
+        <li v-for="(link, index) in links" :key="index">
+            <router-link :to="link.to">{{ link.label }}</router-link>
+        </li>
         <button type="button" @click="scrollToContact"
             class="text-[#222222]  hover:bg-[#E0B247] cursor-pointer px-[15px] py-[3px] rounded-[12px] bg-[#F9C74F]">
             Contact</button>
-
     </ol>
 
 </template>
 
 <style scoped>
+
+li{
+    color:#f2f2f2
+}
 li:hover {
     color: #F9C74F;
     transition: all 0.2s ease;
