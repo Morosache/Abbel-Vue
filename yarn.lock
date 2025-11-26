@@ -1237,6 +1237,7 @@ __metadata:
     vite-plugin-vue-devtools: "npm:^8.0.3"
     vue: "npm:^3.5.22"
     vue-router: "npm:^4.6.3"
+    vue-star-rater: "npm:^0.0.10"
   languageName: unknown
   linkType: soft
 
@@ -2322,7 +2323,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.5.6":
+"postcss@npm:^8.2.1, postcss@npm:^8.5.6":
   version: 8.5.6
   resolution: "postcss@npm:8.5.6"
   dependencies:
@@ -2854,6 +2855,17 @@ __metadata:
   peerDependencies:
     vue: ^3.5.0
   checksum: 10c0/4528f4fded4b45b07d4e096116e9b5fd602af463e735f7e5133b1a258ce325ebc894dd7bc962a937556615fd42d06b0fb290dfae90e96f237862b7f74baa22a0
+  languageName: node
+  linkType: hard
+
+"vue-star-rater@npm:^0.0.10":
+  version: 0.0.10
+  resolution: "vue-star-rater@npm:0.0.10"
+  dependencies:
+    postcss: "npm:^8.2.1"
+  peerDependencies:
+    vue: ^3.0.0
+  checksum: 10c0/d1d7bb37a0cfd1c32d30f35ce0bae6f3c6cb307820fbc8cf1b2c4106de011fc56a44e0286b2173351f695211ddb5593ee9b957be51012bc085e4a92ea62969dd
   languageName: node
   linkType: hard
 

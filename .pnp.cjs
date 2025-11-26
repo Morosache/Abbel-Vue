@@ -39,7 +39,8 @@ const RAW_RUNTIME_STATE =
           ["vite", "virtual:06ecd417c5451ee06d0facd4fa8a933db4e68652c358b78904fc7c46940951812b605a4203b164f53c57a46aec6d80e0d25eeca31216af5814798b4cf3f32a1b#npm:7.2.2"],\
           ["vite-plugin-vue-devtools", "virtual:06ecd417c5451ee06d0facd4fa8a933db4e68652c358b78904fc7c46940951812b605a4203b164f53c57a46aec6d80e0d25eeca31216af5814798b4cf3f32a1b#npm:8.0.3"],\
           ["vue", "virtual:06ecd417c5451ee06d0facd4fa8a933db4e68652c358b78904fc7c46940951812b605a4203b164f53c57a46aec6d80e0d25eeca31216af5814798b4cf3f32a1b#npm:3.5.24"],\
-          ["vue-router", "virtual:06ecd417c5451ee06d0facd4fa8a933db4e68652c358b78904fc7c46940951812b605a4203b164f53c57a46aec6d80e0d25eeca31216af5814798b4cf3f32a1b#npm:4.6.3"]\
+          ["vue-router", "virtual:06ecd417c5451ee06d0facd4fa8a933db4e68652c358b78904fc7c46940951812b605a4203b164f53c57a46aec6d80e0d25eeca31216af5814798b4cf3f32a1b#npm:4.6.3"],\
+          ["vue-star-rater", "virtual:06ecd417c5451ee06d0facd4fa8a933db4e68652c358b78904fc7c46940951812b605a4203b164f53c57a46aec6d80e0d25eeca31216af5814798b4cf3f32a1b#npm:0.0.10"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -1639,7 +1640,8 @@ const RAW_RUNTIME_STATE =
           ["vite", "virtual:06ecd417c5451ee06d0facd4fa8a933db4e68652c358b78904fc7c46940951812b605a4203b164f53c57a46aec6d80e0d25eeca31216af5814798b4cf3f32a1b#npm:7.2.2"],\
           ["vite-plugin-vue-devtools", "virtual:06ecd417c5451ee06d0facd4fa8a933db4e68652c358b78904fc7c46940951812b605a4203b164f53c57a46aec6d80e0d25eeca31216af5814798b4cf3f32a1b#npm:8.0.3"],\
           ["vue", "virtual:06ecd417c5451ee06d0facd4fa8a933db4e68652c358b78904fc7c46940951812b605a4203b164f53c57a46aec6d80e0d25eeca31216af5814798b4cf3f32a1b#npm:3.5.24"],\
-          ["vue-router", "virtual:06ecd417c5451ee06d0facd4fa8a933db4e68652c358b78904fc7c46940951812b605a4203b164f53c57a46aec6d80e0d25eeca31216af5814798b4cf3f32a1b#npm:4.6.3"]\
+          ["vue-router", "virtual:06ecd417c5451ee06d0facd4fa8a933db4e68652c358b78904fc7c46940951812b605a4203b164f53c57a46aec6d80e0d25eeca31216af5814798b4cf3f32a1b#npm:4.6.3"],\
+          ["vue-star-rater", "virtual:06ecd417c5451ee06d0facd4fa8a933db4e68652c358b78904fc7c46940951812b605a4203b164f53c57a46aec6d80e0d25eeca31216af5814798b4cf3f32a1b#npm:0.0.10"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -3478,6 +3480,29 @@ const RAW_RUNTIME_STATE =
           ["@vue/devtools-api", "npm:6.6.4"],\
           ["vue", "virtual:06ecd417c5451ee06d0facd4fa8a933db4e68652c358b78904fc7c46940951812b605a4203b164f53c57a46aec6d80e0d25eeca31216af5814798b4cf3f32a1b#npm:3.5.24"],\
           ["vue-router", "virtual:06ecd417c5451ee06d0facd4fa8a933db4e68652c358b78904fc7c46940951812b605a4203b164f53c57a46aec6d80e0d25eeca31216af5814798b4cf3f32a1b#npm:4.6.3"]\
+        ],\
+        "packagePeers": [\
+          "@types/vue",\
+          "vue"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["vue-star-rater", [\
+      ["npm:0.0.10", {\
+        "packageLocation": "../home/node/.yarn/berry/cache/vue-star-rater-npm-0.0.10-ec7ea1112b-10c0.zip/node_modules/vue-star-rater/",\
+        "packageDependencies": [\
+          ["vue-star-rater", "npm:0.0.10"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:06ecd417c5451ee06d0facd4fa8a933db4e68652c358b78904fc7c46940951812b605a4203b164f53c57a46aec6d80e0d25eeca31216af5814798b4cf3f32a1b#npm:0.0.10", {\
+        "packageLocation": "./.yarn/__virtual__/vue-star-rater-virtual-d756009805/2/home/node/.yarn/berry/cache/vue-star-rater-npm-0.0.10-ec7ea1112b-10c0.zip/node_modules/vue-star-rater/",\
+        "packageDependencies": [\
+          ["@types/vue", null],\
+          ["postcss", "npm:8.5.6"],\
+          ["vue", "virtual:06ecd417c5451ee06d0facd4fa8a933db4e68652c358b78904fc7c46940951812b605a4203b164f53c57a46aec6d80e0d25eeca31216af5814798b4cf3f32a1b#npm:3.5.24"],\
+          ["vue-star-rater", "virtual:06ecd417c5451ee06d0facd4fa8a933db4e68652c358b78904fc7c46940951812b605a4203b164f53c57a46aec6d80e0d25eeca31216af5814798b4cf3f32a1b#npm:0.0.10"]\
         ],\
         "packagePeers": [\
           "@types/vue",\

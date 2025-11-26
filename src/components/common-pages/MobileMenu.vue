@@ -12,9 +12,9 @@ import { X } from 'lucide-vue-next'
             <ol>
                 <router-link to="/"><li>Home</li></router-link>
                 <router-link to="/about-page"><li>About</li></router-link>
-                <router-link to="/"><li>Most recent</li></router-link>
-                <router-link to="/"><li>Reviews</li></router-link>
-                <router-link to="/"><li>Contact</li></router-link>
+                <router-link to="/"><li>Portfolio</li></router-link>
+                <router-link to="/reviews-page"><li>Reviews</li></router-link>
+                <a href="contact"><li>Contact</li></a>
             </ol>
         </div>
     </div>

@@ -20,7 +20,8 @@
     "lucide-vue-next": "^0.553.0",
     "tailwindcss": "^4.1.17",
     "vue": "^3.5.22",
-    "vue-router": "^4.6.3"
+    "vue-router": "^4.6.3",
+    "vue-star-rater": "^0.0.10"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.1",

@@ -43,9 +43,8 @@ onUnmounted(() => {
     <!--Menu bar-->
     <MenuBar :links="[
       { to: '/about-page', label: 'About'},
-      { to: '/', label: 'Most Recent'},
       { to: '/', label: 'Portfolio'},
-      { to: '/', label: 'Reviews'},
+      { to: '/reviews-page', label: 'Reviews'},
     ]"/>
 
     <transition name="slide-in">

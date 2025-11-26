@@ -15,7 +15,6 @@ import Contact from '@/components/main-page/Contact.vue';
 <Contact id="contact" />
 <MainFooter :routes="[
         { to: '/about-page', label: 'About' },
-        { to: '/most-recent-page', label: 'Most Recent' },
         { to: '/portfolio-page', label: 'Portfolio' },
         { to: '/reviews-page', label: 'Reviews' },
     ]" />

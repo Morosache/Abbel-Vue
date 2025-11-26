@@ -57,12 +57,12 @@ export default {
 .footer-input {
     color: #222222;
     font-size: 13px;
-    padding-left: 3px;
+    padding-left: 5px;
 }
 
 input::placeholder {
     font-size: 13px;
-    padding-left: 3px;
+    padding-left: 5px;
 }
 
 @media(min-width:768px) {
